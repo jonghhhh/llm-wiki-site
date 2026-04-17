@@ -4,7 +4,7 @@ created: 2026-04-17
 updated: 2026-04-17
 status: active
 aliases: [LLM Wiki, LLM 위키, LLM Knowledge Base, Karpathy Wiki Pattern]
-related: [[domains/ai-ml/claude-code]], [[domains/ai-ml/obsidian]], [[domains/ai-ml/andrej-karpathy]]
+related: "[[domains/ai-ml/claude-code]], [[domains/ai-ml/obsidian]], [[domains/ai-ml/andrej-karpathy]]"
 tags: [knowledge-management, llm, wiki, architecture]
 primary_source: https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f
 ---

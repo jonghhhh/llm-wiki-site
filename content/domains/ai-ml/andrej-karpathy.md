@@ -4,7 +4,7 @@ created: 2026-04-17
 updated: 2026-04-17
 status: active
 aliases: [Karpathy, 카파시]
-related: [[domains/ai-ml/llm-wiki-pattern]], [[domains/ai-ml/claude-code]]
+related: "[[domains/ai-ml/llm-wiki-pattern]], [[domains/ai-ml/claude-code]]"
 tags: [ai-researcher, openai, tesla]
 ---
 

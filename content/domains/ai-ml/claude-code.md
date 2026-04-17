@@ -4,7 +4,7 @@ created: 2026-04-17
 updated: 2026-04-17
 status: active
 aliases: [Claude Code CLI]
-related: [[domains/ai-ml/llm-wiki-pattern]], [[domains/ai-ml/obsidian]], [[domains/ai-ml/andrej-karpathy]]
+related: "[[domains/ai-ml/llm-wiki-pattern]], [[domains/ai-ml/obsidian]], [[domains/ai-ml/andrej-karpathy]]"
 tags: [llm-agent, cli, anthropic, claude]
 ---
 
