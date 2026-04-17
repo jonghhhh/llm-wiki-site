@@ -8,17 +8,27 @@ Quartz v4 기반, GitHub Pages 배포.
 
 ---
 
-## 배포 업데이트 방법
+## 작업 흐름
 
-vault(`C:\vscode\llm_wiki`)에서 내용을 수정한 뒤, 사이트에 반영하려면:
+```
+Obsidian (llm_wiki)  →  Claude가 sync  →  llm-wiki-site  →  GitHub Pages
+   ✏️ 여기서 작업         "배포해줘"         자동 빌드·push       사이트 반영
+```
 
-### 방법 1: Claude에게 요청
+### 핵심 포인트
+
+- **Obsidian에서 `C:\vscode\llm_wiki`에 평소처럼 작업**하면 됩니다.
+- Obsidian 저장만으로는 사이트에 반영되지 않습니다.
+- 사이트 업데이트가 필요할 때 Claude에게 한 마디만 하세요:
 
 > **"Quartz 배포 업데이트해줘"**
 
-이렇게 말하면 Claude가 아래 과정을 자동으로 처리합니다.
+- Claude가 알아서 처리합니다:
+  1. `llm_wiki` → `llm-wiki-site/content/` 복사 (domains, courses, glossary만)
+  2. 커밋 + push
+  3. GitHub Actions가 자동 빌드·배포 (1~2분)
 
-### 방법 2: 수동 실행
+### 수동으로 하려면
 
 ```bash
 # 1. vault → Quartz content/ 동기화
@@ -31,7 +41,11 @@ git commit -m "update content"
 git push origin v4
 ```
 
-push 후 1~2분 내에 사이트가 자동 갱신됩니다.
+### 주의사항
+
+- `C:\vscode\llm-wiki-site` 폴더는 **삭제하지 마세요** (배포 파이프라인).
+- 이 폴더를 직접 열거나 수정할 필요는 없습니다. Claude가 사용합니다.
+- `raw/`, `sources/`, `projects/`, `_unverified/`는 복사되지 않습니다 (비공개).
 
 ---
 
